@@ -43,7 +43,7 @@ Block *	block_allocate(size_t size) {
  * Attempt to release memory used by block to heap:
  *
  *  1. If the block is at the end of the heap.
- *  2. The block capacity meets the trim threshold.
+ *  2. The block allocation meets the trim threshold.
  *
  * @param   block   Pointer to block to release.
  * @return  Whether or not the release completed successfully.
