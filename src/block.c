@@ -76,8 +76,7 @@ Block * block_detach(Block *block) {
  *  2. If they both match, then merge source into destination by giving the
  *  destination all of the memory allocated to source.
  *
- *  3. If destination is not already in the list, insert merged destination
- *  block into list by updating appropriate references.
+ *  3. Update references from and to destination block appropriately.
  *
  * @param   dst     Destination block we are merging into.
  * @param   src     Source block we are merging from.
